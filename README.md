@@ -4,15 +4,16 @@ This is a Expo App reproducer to demonstrate the performance difference between 
 
 1000 items are rendered in Array.map to simulate the complexity of a real app.
 
-## Results
+## Results - Styled v Native Render Time 1000 Empty Views (ms)
 
 ![graph.png](assets/graph.png)
 
-| Render Time (ms) | 1   | 2   | 3   | 4   | 5   | 6   | Avg | % Slowdown |
-|------------------|-----|-----|-----|-----|-----|-----|-----|------------|
-| Native           | 289 | 281 | 286 | 296 | 280 | 268 |  283 | 0          |
-| Styled v5        | 440 | 426 | 424 | 428 | 429 | 432 |  429 | 41.0       |
-| Styled v6        | 400 | 404 | 401 | 395 | 404 | 400 | 400 | 34.2       |
+
+|           | 1   | 2   | 3   | 4   | 5   | 6   | Avg | % Slowdown |
+|-----------|-----|-----|-----|-----|-----|-----|-----|------------|
+| Native    | 289 | 281 | 286 | 296 | 280 | 268 |  283 | 0          |
+| Styled v5 | 440 | 426 | 424 | 428 | 429 | 432 |  429 | 41.0       |
+| Styled v6 | 400 | 404 | 401 | 395 | 404 | 400 | 400 | 34.2       |
 
 # Reproduction Steps
 1. Start the profiler by pressing Shift + M and open React Dev Tools.
