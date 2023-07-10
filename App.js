@@ -17,12 +17,7 @@ const StyledComponentsView = () => {
       </View>
   );
 }
-/**
- * Time to render App.ts (ms)
- *
- * Native:    289, 281, 286, 296, 280, 268
- * Styled v5: 440, 426, 424, 428, 429, 432
- */
+
 export default function App() {
 
   const [version, setVersion] = useState('styled')
