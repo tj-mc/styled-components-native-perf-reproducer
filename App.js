@@ -6,7 +6,7 @@ import {useState} from "react";
 const NativeStyled = () => {
   return (
       <View style={{display: 'flex', flexDirection: 'row'}}>
-        {new Array(100).fill(0).map((_, i) => <View key={i} style={styles.styledView} />)}
+        {new Array(1000).fill(0).map((_, i) => <View key={i} style={styles.styledView} />)}
       </View>
   );
 }
@@ -14,11 +14,14 @@ const NativeStyled = () => {
 const StyledComponentsView = () => {
   return (
       <View style={{display: 'flex', flexDirection: 'row'}}>
-        {new Array(100).fill(0).map((_, i) => <StyledView key={i} />)}
+        {new Array(1000).fill(0).map((_, i) => <StyledView key={i} />)}
       </View>
   );
 }
-
+/**
+ * Native: 289, 281, 286, 296, 280
+ * Styled: 440, 426, 424, 428, 429
+ */
 export default function App() {
 
   const [version, setVersion] = useState('styled')
