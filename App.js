@@ -5,72 +5,18 @@ import {useState} from "react";
 
 const NativeStyled = () => {
   return (
-      <View style={styles.styledView}>
-        <View style={styles.styledView}>
-          <View style={styles.styledView}>
-            <View style={styles.styledView}>
-              <View style={styles.styledView}>
-                <View style={styles.styledView}>
-                  <View style={styles.styledView}>
-                    <View style={styles.styledView}>
-                      <View style={styles.styledView}>
-                        <View style={styles.styledView}>
-                          <View style={styles.styledView}>
-                            <View style={styles.styledView}>
-                              <View style={styles.styledView}>
-                                <View style={styles.styledView}>
-                                  <View style={styles.styledView}>
-                                  </View>
-                                </View>
-                              </View>
-                            </View>
-                          </View>
-                        </View>
-                      </View>
-                    </View>
-                  </View>
-                </View>
-              </View>
-            </View>
-          </View>
-        </View>
+      <View style={{display: 'flex', flexDirection: 'row'}}>
+        {new Array(100).fill(0).map((_, i) => <View key={i} style={styles.styledView} />)}
       </View>
   );
 }
 
 const StyledComponentsView = () => {
   return (
-    <StyledView>
-      <StyledView>
-        <StyledView>
-          <StyledView>
-            <StyledView>
-              <StyledView>
-                <StyledView>
-                  <StyledView>
-                    <StyledView>
-                      <StyledView>
-                        <StyledView>
-                          <StyledView>
-                            <StyledView>
-                              <StyledView>
-                                <StyledView>
-                                </StyledView>
-                              </StyledView>
-                            </StyledView>
-                          </StyledView>
-                        </StyledView>
-                      </StyledView>
-                    </StyledView>
-                  </StyledView>
-                </StyledView>
-              </StyledView>
-            </StyledView>
-          </StyledView>
-        </StyledView>
-      </StyledView>
-    </StyledView>
-  )
+      <View style={{display: 'flex', flexDirection: 'row'}}>
+        {new Array(100).fill(0).map((_, i) => <StyledView key={i} />)}
+      </View>
+  );
 }
 
 export default function App() {
