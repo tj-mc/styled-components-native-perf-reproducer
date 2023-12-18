@@ -4,6 +4,11 @@ This is a Expo App reproducer to demonstrate the performance difference between 
 
 1000 items are rendered in Array.map to simulate the complexity of a real app.
 
+Please not, this simple benchmark is not exhaustive, and not representative of a real app.
+For precise testing, we must testing in production mode, on hardware.
+
+However, since styled-components does work at runtime to convert this back to normal styles, there will always be an overheard when compared to plain StyleSheet.create()
+
 ## Results - Styled v Native Render Time 1000 Empty Views (ms)
 
 ![graph.png](assets/graph.png)
